@@ -1,10 +1,19 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <nav-bar />
   </div>
   <router-view />
 </template>
+
+<script>
+import navBar from "@/views/layout/navBar"
+
+export default {
+  components: {
+    "nav-bar": navBar,
+  },
+}
+</script>
 
 <style>
 #app {
